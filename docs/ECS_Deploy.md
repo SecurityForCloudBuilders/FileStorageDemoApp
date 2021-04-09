@@ -18,12 +18,12 @@ Escolha um nome. As configurações padrão são aceitáveis.
 
 O repositório pode ser privado ou público. Para princípios desse guia, **vamos seguir assumindo um repositório privado.** 
 
-# 2. Faça o `push` da imagem
+# 2. Preparar a imagem
 (Obs: Será necessário ter o AWS CLI instalado e configurado para esse passo.)
 
 Na tela do repositório, clique em `view push commands`. 
 
-Siga as instruções na tela. Elas mostram como obter os tokens de autenticação para realizar o push da imagem para seu repositório ECR. 
+Siga as instruções na tela. Elas mostram como obter os tokens de autenticação para realizar o `push` da imagem para seu repositório ECR. 
 
 A imagem agora está pronta para uso. 
 
