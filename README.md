@@ -5,38 +5,35 @@
 <hr />
 <br />
 
-## Criando o Ambiente:
+## Quickstart:
 
-<br />
+### Pré-requisitos
 
-### Você Pode executar mais facilmente usando um ambiente docker, só execute o script:
+* Docker instalado
+* Um bucket AWS S3
+* Uma [chave de acesso](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) à conta AWS com permissões de escrita ao bucket.
 
-<br />
+### Configuração
 
-<ul>
+1. Abra o arquivo `docker_run.sh`. 
+2. Altere os conteúdos das variáveis de ambiente com os seus valores
+* `AWS_ACCESS_KEY_ID` - A ID da sua chave de acesso AWS 
+* `AWS_SECRET_ACCESS_KEY` - Sua chave de acesso AWS 
+* `BUCKET_NAME` - a URL do seu bucket
+* `BUCKET_REGION` - a região AWS do seu bucket (ex. `us-east-1` )
 
-<li> <strong> Primeiro, abra o arquivo e mude as variáveis para os valores que fazem sentido para o seu ambiente! </strong> </li>
+### Rodando
 
-<li> <strong>  ./docker_run.sh </strong>  </li>
+1. Execute `./docker_run.sh`
+2. Coloque no seu browser para acessar a página Web `localhost:8000`
 
-</ul>
+### Outras opções de deploy
 
-### Para acessar a página Web, somente: 
+- [Deploy usando AWS ECS Fargate](docs/ECS_Deploy.md)
 
-<br />
+---
 
-<ul>
-
-<li> localhost:your-port-number </li>
-
-</ul>
-
-<br />
-
-<hr />
-<br />
-
-### Como Testar:
+## Testando:
 
 <br />
 
@@ -59,6 +56,8 @@
 <li> <b> Dependendo do tamanho do arquivo, pode ser que demore mais ou menos. </b> </li>
 
 </ul>
+
+No caso de erros, consulte o terminal para ver os logs da aplicação.
 
 <hr />
 <br />
