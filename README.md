@@ -29,7 +29,7 @@
 
 ### Outras opções de deploy
 
-- [Deploy usando AWS ECS Fargate](docs/ECS_DEPLOY.md)
+- [Deploy usando AWS ECS Fargate](docs/ECS_Deploy.md)
 
 ---
 
