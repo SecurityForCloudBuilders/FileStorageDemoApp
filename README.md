@@ -12,6 +12,22 @@
 * Docker instalado
 * Um bucket AWS S3
 * Uma [chave de acesso](https://aws.amazon.com/premiumsupport/knowledge-center/create-access-key/) à conta AWS com permissões de escrita ao bucket.
+    * Uma **boa prática** é criar um novo par credenciais com uma política que autorize apenas escrita no bucket especifico que for ser utilizado, como no exemplo abaixo:
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::NOME_DO_SEU_BUCKET_AQUI/*"
+        }
+    ]
+}
+```
+
 
 ### Configuração
 
